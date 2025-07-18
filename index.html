@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Video Background</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: Arial, sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<video autoplay muted loop playsinline>
+  <source src="bg-dalpozzo.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>Seu vídeo de fundo está rodando!</h1>
+  <p><a href="bg-dalpozzo.mp4" style="color: #fff; text-decoration: underline;">Clique aqui para ver o vídeo direto</a></p>
+</div>
+
+</body>
+</html>
